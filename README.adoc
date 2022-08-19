@@ -1,0 +1,3 @@
+= Test Automation Frameworks
+
+This repository showcases example code for all kinds of frameworks which are used to run tests or help to write them more efficiently. All examples are based on our experience in different actual small and large scale projects.
