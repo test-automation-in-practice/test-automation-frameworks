@@ -1,0 +1,22 @@
+spring:
+  test:
+    database:
+      replace: none
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: "in-memory"
+  datasource:
+    url: "jdbc:h2:mem:database-${random.uuid};MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE;"
+    username: "sa"
+    password: "sa"
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: "docker"
